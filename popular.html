@@ -9,28 +9,31 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header__content">
-        <a href="index.html" class="header__logo"
-          ><span aria-hidden="true">▣</span>Cine<span>Catalog</span></a
-        >
+      <div class="container">
+        <a href="index.html" class="header__logo">CineCatalog</a>
+
         <form class="search" role="search">
-          <label class="search__label" for="movie-search">Buscar filmes</label
-          ><img
+          <label class="search__label" for="movie-search">Search movies</label>
+          <img
             src="./src/assets/Search.svg"
             alt=""
             class="search__icon"
-          /><input
+            aria-hidden="true"
+          />
+          <input
             class="search__input"
             type="search"
+            name="movie-search"
             id="movie-search"
-            placeholder="Buscar filme"
+            placeholder="Search movies..."
           />
         </form>
-        <nav class="navigation" aria-label="Navegação principal">
+
+        <nav class="navigation" aria-label="Main navigation">
           <button
             class="navigation__toggle"
             type="button"
-            aria-label="Abrir menu"
+            aria-label="Open menu"
             aria-expanded="false"
             aria-controls="main-menu"
           >
@@ -38,32 +41,31 @@
               src="./src/assets/Menu.svg"
               alt=""
               class="navigation__toggle-icon"
+              aria-hidden="true"
             />
           </button>
           <ul class="navigation__menu hidden" id="main-menu">
-            <li><a class="navigation__link" href="index.html">Início</a></li>
-            <li>
-              <a
-                class="navigation__link navigation__link--active"
-                href="popular.html"
-                >Populares</a
+            <li class="navigation__item">
+              <a class="navigation__link" href="./index.html">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./popular.html">Popular</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./newReleases.html"
+                >New releases</a
               >
             </li>
-            <li>
-              <a class="navigation__link" href="newReleases.html"
-                >Lançamentos</a
-              >
-            </li>
-            <li>
-              <a class="navigation__link" href="myMovies.html">Meus filmes</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./myMovies.html">My movies</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main class="main container">
       <header class="page-heading">
-        <p class="eyebrow">Explore o catálogo</p>
         <h1>Filmes populares</h1>
         <p>Os títulos mais assistidos e bem avaliados pela comunidade.</p>
       </header>
@@ -75,29 +77,42 @@
         ><button class="filter">Thriller</button
         ><button class="filter">Romance</button>
       </div>
-      <section class="movie-grid">
+      <section class="section__movie-cards">
         <article class="movie-card">
-          <div class="movie-card__cover cover--one"></div>
-          <h2 class="movie-card__movie-name">The Last Signal</h2>
-          <p class="movie-card__movie-info">2024 <span>•</span> 122 min</p>
+          <div class="movie-card__cover"></div>
+          <h2 class="movie-card__movie-name">Nome Filme</h2>
+          <p class="movie-card__movie-info">
+            <span class="movie-card__movie-year">Ano</span> &middot
+            <span class="movie-card__movie-duration">duração minutos</span>
+          </p>
         </article>
         <article class="movie-card">
-          <div class="movie-card__cover cover--two"></div>
-          <h2 class="movie-card__movie-name">Neon Horizon</h2>
-          <p class="movie-card__movie-info">2023 <span>•</span> 118 min</p>
+          <div class="movie-card__cover"></div>
+          <h2 class="movie-card__movie-name">Nome Filme</h2>
+          <p class="movie-card__movie-info">
+            <span class="movie-card__movie-year">Ano</span> &middot
+            <span class="movie-card__movie-duration">duração minutos</span>
+          </p>
         </article>
         <article class="movie-card">
-          <div class="movie-card__cover cover--three"></div>
-          <h2 class="movie-card__movie-name">Parallel Lines</h2>
-          <p class="movie-card__movie-info">2024 <span>•</span> 107 min</p>
+          <div class="movie-card__cover"></div>
+          <h2 class="movie-card__movie-name">Nome Filme</h2>
+          <p class="movie-card__movie-info">
+            <span class="movie-card__movie-year">Ano</span> &middot
+            <span class="movie-card__movie-duration">duração minutos</span>
+          </p>
         </article>
         <article class="movie-card">
-          <div class="movie-card__cover cover--four"></div>
-          <h2 class="movie-card__movie-name">The Long Road</h2>
-          <p class="movie-card__movie-info">2023 <span>•</span> 101 min</p>
+          <div class="movie-card__cover"></div>
+          <h2 class="movie-card__movie-name">Nome Filme</h2>
+          <p class="movie-card__movie-info">
+            <span class="movie-card__movie-year">Ano</span> &middot
+            <span class="movie-card__movie-duration">duração minutos</span>
+          </p>
         </article>
       </section>
     </main>
+
     <footer><p>© 2026 CineCatalog · João Pedro P. Prado</p></footer>
     <script type="module" src="./src/main.js"></script>
   </body>

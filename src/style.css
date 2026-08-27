@@ -117,6 +117,29 @@ a {
   display: block;
 }
 
+/* --- Main --- */
+
+/*Banner*/
+.banner {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-top: 30px;
+  padding: 24px;
+}
+
+.banner__title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.banner__description {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* --- Utility Class --- */
+
 .hidden {
   display: none;
 }

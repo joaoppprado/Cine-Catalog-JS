@@ -158,6 +158,34 @@ a {
   background-color: var(--border-color);
 }
 
+.section__movie-cards {
+  padding: 24px 0;
+}
+
+.movie-card {
+  width: 100%;
+  max-width: 134px;
+  border-radius: 8px;
+}
+
+.movie-card__cover {
+  width: 100%;
+  height: 198px;
+  border-radius: inherit;
+  background-image: url(./assets/Movie-cover-example.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.movie-card__movie-name {
+  font-size: 0.9rem;
+}
+
+.movie-card__movie-info {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
 /* --- Utility Class --- */
 
 .capitalize {

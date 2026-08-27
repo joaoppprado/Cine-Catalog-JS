@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>CineCatalog | Filmes populares</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__content">
+        <a href="index.html" class="header__logo"
+          ><span aria-hidden="true">▣</span>Cine<span>Catalog</span></a
+        >
+        <form class="search" role="search">
+          <label class="search__label" for="movie-search">Buscar filmes</label
+          ><img
+            src="./src/assets/Search.svg"
+            alt=""
+            class="search__icon"
+          /><input
+            class="search__input"
+            type="search"
+            id="movie-search"
+            placeholder="Buscar filme"
+          />
+        </form>
+        <nav class="navigation" aria-label="Navegação principal">
+          <button
+            class="navigation__toggle"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="main-menu"
+          >
+            <img
+              src="./src/assets/Menu.svg"
+              alt=""
+              class="navigation__toggle-icon"
+            />
+          </button>
+          <ul class="navigation__menu hidden" id="main-menu">
+            <li><a class="navigation__link" href="index.html">Início</a></li>
+            <li>
+              <a
+                class="navigation__link navigation__link--active"
+                href="popular.html"
+                >Populares</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link" href="newReleases.html"
+                >Lançamentos</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link" href="myMovies.html">Meus filmes</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main container">
+      <header class="page-heading">
+        <p class="eyebrow">Explore o catálogo</p>
+        <h1>Filmes populares</h1>
+        <p>Os títulos mais assistidos e bem avaliados pela comunidade.</p>
+      </header>
+      <div class="filters" aria-label="Filtros de gênero">
+        <button class="filter filter--active">Todos</button
+        ><button class="filter">Ação</button
+        ><button class="filter">Drama</button
+        ><button class="filter">Ficção científica</button
+        ><button class="filter">Thriller</button
+        ><button class="filter">Romance</button>
+      </div>
+      <section class="movie-grid">
+        <article class="movie-card">
+          <div class="movie-card__cover cover--one"></div>
+          <h2 class="movie-card__movie-name">The Last Signal</h2>
+          <p class="movie-card__movie-info">2024 <span>•</span> 122 min</p>
+        </article>
+        <article class="movie-card">
+          <div class="movie-card__cover cover--two"></div>
+          <h2 class="movie-card__movie-name">Neon Horizon</h2>
+          <p class="movie-card__movie-info">2023 <span>•</span> 118 min</p>
+        </article>
+        <article class="movie-card">
+          <div class="movie-card__cover cover--three"></div>
+          <h2 class="movie-card__movie-name">Parallel Lines</h2>
+          <p class="movie-card__movie-info">2024 <span>•</span> 107 min</p>
+        </article>
+        <article class="movie-card">
+          <div class="movie-card__cover cover--four"></div>
+          <h2 class="movie-card__movie-name">The Long Road</h2>
+          <p class="movie-card__movie-info">2023 <span>•</span> 101 min</p>
+        </article>
+      </section>
+    </main>
+    <footer><p>© 2026 CineCatalog · João Pedro P. Prado</p></footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

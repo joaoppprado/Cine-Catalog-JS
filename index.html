@@ -8,31 +8,54 @@
     <title>Cine Catalog</title>
   </head>
   <body>
-    <header>
-      <a href="index.html" class="logo">CineCatalog</a>
+    <header class="header">
+      <a href="index.html" class="header__logo">CineCatalog</a>
 
-      <div class="search-bar">
+      <form class="search" role="search">
+        <label class="search__label" for="movie-search">Search movies</label>
         <img
           src="./src/assets/Search.svg"
-          alt="search icon"
-          class="search-bar--img"
+          alt=""
+          class="search__icon"
+          aria-hidden="true"
         />
-        <input type="search" name="" id="" placeholder="Buscar filmes..." />
-      </div>
+        <input
+          class="search__input"
+          type="search"
+          name="movie-search"
+          id="movie-search"
+          placeholder="Search movies..."
+        />
+      </form>
 
-      <nav>
-        <button class="menu-mobile-button">
+      <nav class="navigation" aria-label="Main navigation">
+        <button
+          class="navigation__toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="main-menu"
+        >
           <img
             src="./src/assets/Menu.svg"
-            alt="hamburger menu icon"
-            class="menu-button-icon"
+            alt=""
+            class="navigation__toggle-icon"
+            aria-hidden="true"
           />
         </button>
-        <ul class="menu hidden">
-          <li>home</li>
-          <li>popular</li>
-          <li>new releases</li>
-          <li>my movies</li>
+        <ul class="navigation__menu hidden" id="main-menu">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Popular</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">New releases</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">My movies</a>
+          </li>
         </ul>
       </nav>
     </header>

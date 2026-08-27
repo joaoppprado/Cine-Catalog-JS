@@ -9,58 +9,60 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="header__logo">CineCatalog</a>
+      <div class="container">
+        <a href="index.html" class="header__logo">CineCatalog</a>
 
-      <form class="search" role="search">
-        <label class="search__label" for="movie-search">Search movies</label>
-        <img
-          src="./src/assets/Search.svg"
-          alt=""
-          class="search__icon"
-          aria-hidden="true"
-        />
-        <input
-          class="search__input"
-          type="search"
-          name="movie-search"
-          id="movie-search"
-          placeholder="Search movies..."
-        />
-      </form>
-
-      <nav class="navigation" aria-label="Main navigation">
-        <button
-          class="navigation__toggle"
-          type="button"
-          aria-label="Open menu"
-          aria-expanded="false"
-          aria-controls="main-menu"
-        >
+        <form class="search" role="search">
+          <label class="search__label" for="movie-search">Search movies</label>
           <img
-            src="./src/assets/Menu.svg"
+            src="./src/assets/Search.svg"
             alt=""
-            class="navigation__toggle-icon"
+            class="search__icon"
             aria-hidden="true"
           />
-        </button>
-        <ul class="navigation__menu hidden" id="main-menu">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Home</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Popular</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">New releases</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">My movies</a>
-          </li>
-        </ul>
-      </nav>
+          <input
+            class="search__input"
+            type="search"
+            name="movie-search"
+            id="movie-search"
+            placeholder="Search movies..."
+          />
+        </form>
+
+        <nav class="navigation" aria-label="Main navigation">
+          <button
+            class="navigation__toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="main-menu"
+          >
+            <img
+              src="./src/assets/Menu.svg"
+              alt=""
+              class="navigation__toggle-icon"
+              aria-hidden="true"
+            />
+          </button>
+          <ul class="navigation__menu hidden" id="main-menu">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Popular</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">New releases</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">My movies</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main class="main">
+    <main class="main container">
       <section class="banner">
         <h1 class="banner__title">Cine Catalog</h1>
         <p class="banner__description">
@@ -70,7 +72,7 @@
         </p>
       </section>
 
-      <section class="popular">
+      <section class="section section__popular">
         <header class="section__header">
           <h2 class="section__title capitalize">popular now</h2>
           <div class="section__row"></div>
@@ -88,7 +90,7 @@
         </div>
       </section>
 
-      <section class="new-releases">
+      <section class="section section__new-releases">
         <header class="section__header">
           <h2 class="section__title capitalize">new releases</h2>
           <div class="section__row"></div>

@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/pages/home.css" />
     <title>Cine Catalog</title>
   </head>
   <body>
@@ -67,47 +68,30 @@
     <main class="main container">
       <section class="banner">
         <h1 class="banner__title">Cine Catalog</h1>
+
         <p class="banner__description">
-          Aplicação web responsiva e dinâmica para catálogo e gerenciamento
-          pessoal de filmes. A plataforma consome a API oficial do The Movie
-          Database (TMDB).
+          A responsive, dynamic web app built to catalog and manage a personal
+          movie collection, consuming data directly from the official The Movie
+          Database (TMDB) API.
         </p>
       </section>
 
       <section class="section section__popular">
         <header class="section__header">
-          <h2 class="section__title capitalize">popular now</h2>
+          <h2 class="section__title">Popular</h2>
           <div class="section__row"></div>
-          <a href="#" class="section__see-more capitalize">see more</a>
+          <a href="./popular.html" class="section__see-more">See More</a>
         </header>
-        <div class="section__movie-cards">
-          <div class="movie-card">
-            <div class="movie-card__cover"></div>
-            <p class="movie-card__movie-name">Nome do Filme</p>
-            <p class="movie-card__movie-info">
-              <span class="movie-card__movie-year">Ano</span> &middot
-              <span class="movie-card__movie-duration">duração minutos</span>
-            </p>
-          </div>
-        </div>
+        <div class="section__movie-cards"></div>
       </section>
 
       <section class="section section__new-releases">
         <header class="section__header">
-          <h2 class="section__title capitalize">new releases</h2>
+          <h2 class="section__title">New Releases</h2>
           <div class="section__row"></div>
-          <a href="#" class="section__see-more capitalize">see more</a>
+          <a href="./newReleases.html" class="section__see-more">See More</a>
         </header>
-        <div class="section__movie-cards">
-          <div class="movie-card">
-            <div class="movie-card__cover"></div>
-            <p class="movie-card__movie-name">Nome do Filme</p>
-            <p class="movie-card__movie-info">
-              <span class="movie-card__movie-year">Ano</span> &middot
-              <span class="movie-card__movie-duration">duração minutos</span>
-            </p>
-          </div>
-        </div>
+        <div class="section__movie-cards"></div>
       </section>
     </main>
 

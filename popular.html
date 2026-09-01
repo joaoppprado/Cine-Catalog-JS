@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
     <title>CineCatalog | Filmes populares</title>
   </head>
   <body>
@@ -66,51 +66,17 @@
 
     <main class="main container">
       <header class="page-heading">
-        <h1>Filmes populares</h1>
-        <p>Os títulos mais assistidos e bem avaliados pela comunidade.</p>
+        <h1 class="page-heading__title">Popular Movies</h1>
       </header>
-      <div class="filters" aria-label="Filtros de gênero">
-        <button class="filter filter--active">Todos</button
-        ><button class="filter">Ação</button
-        ><button class="filter">Drama</button
-        ><button class="filter">Ficção científica</button
-        ><button class="filter">Thriller</button
-        ><button class="filter">Romance</button>
+      <div class="filters" aria-label="Genre Filters">
+        <button class="filter filter--active">All</button>
+        <button class="filter">Action</button>
+        <button class="filter">Drama</button>
+        <button class="filter">Sci-Fi</button>
+        <button class="filter">Thriller</button>
+        <button class="filter">Romance</button>
       </div>
-      <section class="section__movie-cards">
-        <article class="movie-card">
-          <div class="movie-card__cover"></div>
-          <h2 class="movie-card__movie-name">Nome Filme</h2>
-          <p class="movie-card__movie-info">
-            <span class="movie-card__movie-year">Ano</span> &middot
-            <span class="movie-card__movie-duration">duração minutos</span>
-          </p>
-        </article>
-        <article class="movie-card">
-          <div class="movie-card__cover"></div>
-          <h2 class="movie-card__movie-name">Nome Filme</h2>
-          <p class="movie-card__movie-info">
-            <span class="movie-card__movie-year">Ano</span> &middot
-            <span class="movie-card__movie-duration">duração minutos</span>
-          </p>
-        </article>
-        <article class="movie-card">
-          <div class="movie-card__cover"></div>
-          <h2 class="movie-card__movie-name">Nome Filme</h2>
-          <p class="movie-card__movie-info">
-            <span class="movie-card__movie-year">Ano</span> &middot
-            <span class="movie-card__movie-duration">duração minutos</span>
-          </p>
-        </article>
-        <article class="movie-card">
-          <div class="movie-card__cover"></div>
-          <h2 class="movie-card__movie-name">Nome Filme</h2>
-          <p class="movie-card__movie-info">
-            <span class="movie-card__movie-year">Ano</span> &middot
-            <span class="movie-card__movie-duration">duração minutos</span>
-          </p>
-        </article>
-      </section>
+      <section class="section__movie-cards"></section>
     </main>
 
     <footer><p>© 2026 CineCatalog · João Pedro P. Prado</p></footer>

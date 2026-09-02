@@ -39,10 +39,27 @@
 
 @media screen and (min-width: 1120px) {
   .section__movie-cards {
-    grid-template-columns: repeat(6, 1fr);
-    gap: 40px 24px;
+    grid-template-columns: repeat(6, minmax(200px, 230px));
+    gap: 20px;
   }
   .movie-card {
     max-width: 100%;
+    cursor: pointer;
+    padding: 3px;
+    transition: transform var(--transition-normal);
+  }
+
+  .movie-card:hover {
+    outline: 1px solid white;
+    transform: scale(1.02);
+  }
+
+  .movie-card__movie-name {
+    font-size: 1rem;
+  }
+
+  .movie-card__movie-info {
+    font-size: 0.9rem;
+    color: var(--text-muted);
   }
 }

@@ -15,12 +15,8 @@
 }
 
 @media screen and (min-width: 1120px) {
-  .section__movie-cards {
-    grid-template-columns: repeat(5, 1fr);
-  }
-
   .section__title {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .section__see-more {
@@ -30,5 +26,19 @@
   .section__see-more:hover {
     color: var(--text-main);
     transition: var(--transition-fast);
+  }
+
+  .section__movie-cards {
+    grid-template-columns: repeat(5, minmax(175px, 250px));
+    gap: 22px 32px;
+  }
+
+  .movie-card__movie-name {
+    font-size: 1.1rem;
+  }
+
+  .movie-card__movie-info {
+    font-size: 0.9rem;
+    color: var(--text-muted);
   }
 }

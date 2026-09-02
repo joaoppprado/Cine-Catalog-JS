@@ -1,0 +1,35 @@
+.page-heading {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.page-heading__subtitle {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  letter-spacing: 1px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.page-heading__title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .page-heading__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .page-heading {
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
+  .page-heading__title {
+    font-size: 3rem;
+  }
+}

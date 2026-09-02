@@ -1,0 +1,117 @@
+.banner {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  margin-top: 16px;
+  padding: 24px;
+  background-image:
+    linear-gradient(to top, var(--bg-secondary) 10%, rgba(15, 21, 34, 0.4)),
+    url(../../assets/hero.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.banner__tag-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.banner__tag {
+  color: var(--color-primary);
+  letter-spacing: 1px;
+}
+
+.banner__tag-subtitle {
+  color: var(--text-muted);
+  text-transform: none;
+  font-weight: 400;
+}
+
+.banner__title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.banner__info-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.banner__rating {
+  background-color: var(--color-primary-alpha);
+  color: var(--color-primary);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+}
+
+.banner__genre {
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  color: var(--text-main);
+}
+
+.banner__description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.banner__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .banner__title {
+    font-size: 3rem;
+  }
+  .banner__description {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .banner {
+    padding: 64px 48px;
+    background-image:
+      linear-gradient(
+        to right,
+        var(--bg-secondary) 25%,
+        rgba(15, 21, 34, 0.4) 60%
+      ),
+      url(../../assets/hero.png);
+    width: 100%;
+    margin-top: 24px;
+  }
+  .banner__title {
+    font-size: 3.5rem;
+    text-align: left;
+  }
+  .banner__description {
+    font-size: 1.1rem;
+    max-width: 50%;
+  }
+  .banner__info-row {
+    justify-content: flex-start;
+  }
+}

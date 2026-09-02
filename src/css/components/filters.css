@@ -1,0 +1,39 @@
+.filters {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+}
+.filters::-webkit-scrollbar {
+  display: none;
+}
+
+.filter {
+  background-color: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.filter:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--text-main);
+}
+
+.filter--active {
+  background-color: var(--color-primary-alpha);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    font-size: 1.1rem;
+  }
+}
